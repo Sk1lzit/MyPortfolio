@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sk1lz — Frontend Developer</title>
+    <title>Sk1lz — Frontend Developer & Discord Bot Developer</title>
+    <meta name="description" content="Sk1lz — Frontend-разработчик. Разработка Discord-ботов и сайтов на заказ.">
+    <meta name="keywords" content="discord bot, разработка ботов, frontend разработчик, react">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Стили -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- НАВИГАЦИЯ -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Sk1lz</a>
+            <a href="index.html" class="logo">
+                <img src="favicon.png" alt="Sk1lz" class="logo-img">
+                Sk1lz
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -22,17 +34,22 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="avatar.png" alt="Sk1lz">
+            </div>
             <p class="hero-greeting">Hello! I am <span class="highlight">Sk1lz</span></p>
             <h1 class="hero-title">
                 I'm a <span class="typewriter" data-text="Frontend Developer"></span><span class="cursor">|</span>
             </h1>
             <p class="hero-subtitle">
-                Разрабатываю Discord-ботов и веб-приложения.
-                Frontend-разработчик с опытом в Python, JavaScript, React.
+                Frontend-разработчик. Создаю Discord-ботов и веб-приложения.
+                Python, JavaScript, React, discord.py.
             </p>
             <div class="hero-buttons">
-                <a href="projects.html" class="btn btn-primary">Мои проекты</a>
-                <a href="contact.html" class="btn btn-secondary">Связаться</a>
+                <a href="https://t.me/Sk1lzzz" class="btn btn-primary" target="_blank">
+                    ✈️ Заказать в Telegram
+                </a>
+                <a href="projects.html" class="btn btn-secondary">Мои проекты</a>
             </div>
         </div>
     </section>
@@ -51,42 +68,76 @@
                 инструментами. В Discord-разработке использую <strong>discord.py</strong>,
                 Slash-команды, гибридные команды, интерактивные меню.
             </p>
-            <div class="skills">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">C++</span>
-                <span class="skill-tag">C#</span>
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">discord.py</span>
+            
+            <h3 style="text-align: center; color: var(--purple-light); margin-top: 2rem; margin-bottom: 1rem;">Навыки</h3>
+            <div class="skills-bars">
+                <div class="skill-bar">
+                    <div class="skill-header"><span>Python</span><span>85%</span></div>
+                    <div class="skill-progress"><div class="skill-fill" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-header"><span>JavaScript</span><span>80%</span></div>
+                    <div class="skill-progress"><div class="skill-fill" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-header"><span>React</span><span>75%</span></div>
+                    <div class="skill-progress"><div class="skill-fill" style="width: 75%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-header"><span>discord.py</span><span>90%</span></div>
+                    <div class="skill-progress"><div class="skill-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-header"><span>Git</span><span>80%</span></div>
+                    <div class="skill-progress"><div class="skill-fill" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-header"><span>HTML/CSS</span><span>90%</span></div>
+                    <div class="skill-progress"><div class="skill-fill" style="width: 90%"></div></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- УСЛУГИ -->
-    <section class="services">
-        <h2 class="section-title">Услуги</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🤖</div>
-                <h3>Разработка Discord-ботов</h3>
-                <p>От простых утилит до систем с модерацией, тикетами и нейросетями.</p>
-                <p class="price">от 3 500 ₽</p>
+    <!-- ПРОЦЕСС РАБОТЫ -->
+    <section class="process">
+        <h2 class="section-title">Как я работаю</h2>
+        <div class="process-grid">
+            <div class="process-card">
+                <div class="process-num">01</div>
+                <h3>Обсуждение ТЗ</h3>
+                <p>Обсуждаем задачу, детали, сроки и цену</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon">💻</div>
-                <h3>Веб-разработка</h3>
-                <p>Сайты, лендинги, веб-приложения на HTML/CSS/JS и React.</p>
-                <p class="price">от 5 000 ₽</p>
+            <div class="process-card">
+                <div class="process-num">02</div>
+                <h3>План работы</h3>
+                <p>Составляю план и этапы разработки</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon">⚙️</div>
-                <h3>Автоматизация</h3>
-                <p>Скрипты на Python, интеграции с API, парсеры, боты для Telegram.</p>
-                <p class="price">от 4 000 ₽</p>
+            <div class="process-card">
+                <div class="process-num">03</div>
+                <h3>Разработка</h3>
+                <p>Пишу код, показываю промежуточные результаты</p>
             </div>
+            <div class="process-card">
+                <div class="process-num">04</div>
+                <h3>Тестирование</h3>
+                <p>Проверяю всё, исправляю баги</p>
+            </div>
+            <div class="process-card">
+                <div class="process-num">05</div>
+                <h3>Сдача и поддержка</h3>
+                <p>Передаю готовый проект и помогаю с запуском</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Готов обсудить проект?</h2>
+        <p>Пиши — отвечу в течение 15 минут</p>
+        <div class="hero-buttons">
+            <a href="https://t.me/Sk1lzzz" class="btn btn-primary" target="_blank">✈️ Telegram</a>
+            <a href="contact.html" class="btn btn-secondary">Все контакты</a>
         </div>
     </section>
 
@@ -95,7 +146,8 @@
         <p>© 2026 Sk1lz. Все права защищены.</p>
         <div class="footer-links">
             <a href="https://github.com/Sk1lzit" target="_blank">GitHub</a>
-            <a href="contact.html">Связаться</a>
+            <a href="https://t.me/Sk1lzzz" target="_blank">Telegram</a>
+            <a href="contact.html">Контакты</a>
         </div>
     </footer>
 

@@ -4,44 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects — Sk1lz</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Sk1lz</a>
+            <a href="index.html" class="logo">
+                <img src="favicon.png" alt="Sk1lz" class="logo-img">
+                Sk1lz
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="active">My Projects</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero" style="min-height: auto; padding-top: 10rem;">
-        <div class="hero-content">
-            <h1 class="hero-title">My <span class="typewriter" style="-webkit-text-fill-color: unset; color: var(--purple-light);">Projects</span></h1>
-            <p class="hero-subtitle">Проекты, которые я сделал</p>
-        </div>
+    <section class="page-header">
+        <h1 class="section-title">My Projects</h1>
+        <p>Проекты, которые я сделал</p>
     </section>
 
-    <section class="services" style="padding-top: 2rem;">
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🤖</div>
-                <h3>Avatari — Discord Bot</h3>
-                <p>Многофункциональный Discord-бот: модерация с авто-мутом, статистика с фильтрами, тикеты с верификацией, диалог с нейросетью, генерация изображений, логирование в Telegram, меню управления правами.</p>
-                <p class="price">Python · discord.py · OpenRouter · Telegram API</p>
+    <section class="projects">
+        <!-- ПРОЕКТ 1: AVATARI -->
+        <div class="project-card">
+            <div class="project-images">
+                <img src="images/avatari-1.png" alt="Avatari - help" class="project-img">
+                <img src="images/avatari-2.png" alt="Avatari - menu" class="project-img">
+                <img src="images/avatari-3.png" alt="Avatari - AI" class="project-img">
             </div>
-            <div class="service-card">
-                <div class="service-icon">🌐</div>
-                <h3>Портфолио-сайт</h3>
-                <p>Личный сайт-портфолио с тёмной темой, анимациями и навигацией. Сделан на чистом HTML/CSS/JS, задеплоен на Vercel.</p>
-                <p class="price">HTML · CSS · JavaScript</p>
+            <div class="project-info">
+                <h2>🤖 Avatari — Discord Bot</h2>
+                <p>
+                    Многофункциональный Discord-бот: модерация с авто-мутом,
+                    статистика с фильтрами, тикеты с верификацией, диалог с
+                    нейросетью, генерация изображений, логирование в Telegram,
+                    меню управления правами.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">discord.py</span>
+                    <span class="tag">OpenRouter</span>
+                    <span class="tag">Telegram API</span>
+                </div>
             </div>
-            <div class="service-card">
-                <div class="service-icon">⚙️</div>
-                <h3>Скоро...</h3>
+        </div>
+
+        <!-- ПРОЕКТ 2: ПОРТФОЛИО -->
+        <div class="project-card">
+            <div class="project-images">
+                <img src="images/portfolio-1.png" alt="Portfolio" class="project-img">
+            </div>
+            <div class="project-info">
+                <h2>🌐 Портфолио-сайт</h2>
+                <p>
+                    Личный сайт-портфолио с тёмной темой, анимациями,
+                    навигацией и адаптивным дизайном. Сделан на чистом
+                    HTML/CSS/JS, задеплоен на Vercel.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Vercel</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ПРОЕКТ 3: СХЕМА СЕРВЕРА -->
+        <div class="project-card">
+            <div class="project-images">
+                <img src="images/presentation-1.png" alt="Presentation" class="project-img">
+            </div>
+            <div class="project-info">
+                <h2>📊 Презентация структуры сервера</h2>
+                <p>
+                    Интерактивная схема иерархии персонала Discord-сервера.
+                    Кликабельные карточки, ссылки на профили, адаптивный дизайн.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ПРОЕКТ 4: СКОРО -->
+        <div class="project-card coming-soon">
+            <div class="project-info">
+                <h2>⚙️ Скоро...</h2>
                 <p>Здесь появятся новые проекты. Следи за обновлениями.</p>
             </div>
         </div>
@@ -51,7 +107,7 @@
         <p>© 2026 Sk1lz. Все права защищены.</p>
         <div class="footer-links">
             <a href="https://github.com/Sk1lzit" target="_blank">GitHub</a>
-            <a href="contact.html">Связаться</a>
+            <a href="https://t.me/Sk1lzzz" target="_blank">Telegram</a>
         </div>
     </footer>
 
