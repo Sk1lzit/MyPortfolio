@@ -714,3 +714,96 @@ section {
     pointer-events: none;
     background: #0a0118;
 }
+
+/* ===== ГАЛОЧКА СОГЛАСИЯ ===== */
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--purple);
+    cursor: pointer;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.checkbox-label a {
+    color: var(--purple-light);
+    text-decoration: none;
+}
+
+.checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+/* ===== ЮРИДИЧЕСКИЕ СТРАНИЦЫ ===== */
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.legal-date {
+    text-align: center;
+    color: var(--purple-light);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    opacity: 0.7;
+}
+
+.legal-content h2 {
+    color: var(--purple-light);
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.legal-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.legal-content ul {
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+.legal-content ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.legal-content a {
+    color: var(--purple-light);
+    text-decoration: none;
+}
+
+.legal-content a:hover {
+    text-decoration: underline;
+}
+
+.legal-content strong {
+    color: var(--text);
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 2rem 1rem;
+    }
+    
+    .legal-content h2 {
+        font-size: 1.1rem;
+    }
+}

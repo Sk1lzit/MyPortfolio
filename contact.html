@@ -50,12 +50,24 @@
     <!-- ФОРМА -->
     <section class="form-section">
         <h2 class="section-title">Или напишите здесь</h2>
-        <form action="https://formspree.io/f/xaenbvpl" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Ваше имя" required>
-            <input type="email" name="email" placeholder="Email или Telegram" required>
-            <textarea name="message" placeholder="Опишите задачу..." rows="6" required></textarea>
-            <button type="submit" class="btn btn-primary">Отправить</button>
-        </form>
+        <form action="https://formspree.io/f/ВАШ_ID" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Email или Telegram" required>
+    <textarea name="message" placeholder="Опишите задачу..." rows="6" required></textarea>
+    
+    <!-- Галочка согласия -->
+    <label class="checkbox-label">
+        <input type="checkbox" name="consent" required>
+        <span>
+            Я согласен с 
+            <a href="privacy.html" target="_blank">Политикой конфиденциальности</a> 
+            и даю 
+            <a href="terms.html" target="_blank">согласие на обработку персональных данных</a>
+        </span>
+    </label>
+    
+    <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
     </section>
 
     <footer class="footer">
@@ -63,6 +75,8 @@
         <div class="footer-links">
             <a href="https://github.com/Sk1lzit" target="_blank">GitHub</a>
             <a href="https://t.me/Sk1lzzz" target="_blank">Telegram</a>
+            <a href="privacy.html">Политика конфиденциальности</a>
+            <a href="terms.html">Согласие на обработку данных</a>
         </div>
     </footer>
 
