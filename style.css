@@ -71,19 +71,7 @@ body {
     flex-shrink: 0;
 }
 
-/* Градиент только для текста, не для картинки */
-.logo {
-    background: none;
-    -webkit-text-fill-color: initial;
-}
 
-.logo::after {
-    content: 'Sk1lz';
-    background: linear-gradient(135deg, var(--purple), var(--purple-light));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 
 .nav-links {
     display: flex;
@@ -713,4 +701,16 @@ section {
     .cta h2 { font-size: 1.5rem; }
     
     .skills-bars { padding: 0 1rem; }
+}
+
+/* ===== Анимированный фон ===== */
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: #0a0118;
 }
